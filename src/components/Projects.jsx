@@ -41,28 +41,34 @@ const ProjectCard = ({ title, description, metrics, delay }) => (
 const Projects = () => {
   const projects = [
     {
+      title: "Aura",
+      description: "A gamified student contribution tracking platform for college clubs. Features role-based access, validation workflows, and a gamification engine with leaderboards and streaks.",
+      metrics: { "Role": "Full-Stack", "Feature": "Gamification" },
+      delay: 0.1
+    },
+    {
       title: "DataLeaf",
       description: "Digital Carbon Footprint Analyzer estimating Gmail and Google Drive emissions. Features a sustainability dashboard with automated email cleanup.",
       metrics: { "Impact": "Automated", "Tech": "n8n / APIs" },
-      delay: 0.1
+      delay: 0.2
     },
     {
       title: "Food on Wheels",
       description: "A web/mobile app connecting users with street food vendors to improve accessibility and digital presence for small vendors.",
       metrics: { "Type": "Full-Stack", "Focus": "Social" },
-      delay: 0.2
+      delay: 0.3
     },
     {
       title: "Plant Disease ID",
       description: "Web-based platform helping farmers identify plant diseases through image analysis and suggesting immediate treatments.",
       metrics: { "Accuracy": "89%+", "Field": "Agro-AI" },
-      delay: 0.3
+      delay: 0.4
     },
     {
       title: "Indoor Navigation",
       description: "Optimized routing system for large indoor environments like hospitals and malls, improving visitor experience through precise mapping.",
       metrics: { "Optim": "Dijkstra", "UI": "Interactive" },
-      delay: 0.4
+      delay: 0.5
     }
   ];
 

@@ -17,7 +17,20 @@ const Hero = () => {
           Open for Internships
         </span>
         
-        <h1 className="text-5xl md:text-7xl font-bold font-outfit mb-6">
+        <motion.div 
+          className="mx-auto w-32 h-32 md:w-40 md:h-40 mb-8 rounded-full overflow-hidden border-2 border-primary/30 p-1 backdrop-blur-sm"
+          initial={{ scale: 0.8, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ type: "spring", stiffness: 100, damping: 20, delay: 0.2 }}
+        >
+          <img 
+            src="/profile.jpg" 
+            alt="Bala Prasanna" 
+            className="w-full h-full object-cover rounded-full"
+          />
+        </motion.div>
+
+        <h1 className="text-5xl md:text-7xl font-bold font-outfit mb-6 mt-4">
           Hi, I'm <span className="text-gradient">Bala Prasanna</span>
         </h1>
         

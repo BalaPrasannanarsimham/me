@@ -9,14 +9,21 @@ const About = () => {
            initial={{ opacity: 0, x: -50 }}
            whileInView={{ opacity: 1, x: 0 }}
            viewport={{ once: true }}
-           className="relative aspect-square max-w-md mx-auto md:mx-0 bg-white/5 rounded-3xl overflow-hidden glass border border-white/10"
+           className="relative aspect-square max-w-md mx-auto md:mx-0 bg-white/5 rounded-3xl overflow-hidden glass border border-white/10 group"
         >
-          {/* Use a placeholder image or a generated image if the user provides one */}
-          <div className="absolute inset-0 flex items-center justify-center text-gray-500 font-outfit text-xl italic font-semibold p-8 text-center">
-            "Innovation through Data, Intelligence through AI."
-          </div>
+          <img 
+            src="/profile.jpg" 
+            alt="Bala Prasanna" 
+            className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105" 
+          />
           {/* Overlay gradient */}
-          <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-60" />
+          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent opacity-90 transition-opacity duration-500 group-hover:opacity-75" />
+          
+          <div className="absolute bottom-8 left-0 right-0 px-8 text-center pointer-events-none">
+            <span className="block text-white font-outfit text-xl font-bold italic tracking-wide drop-shadow-lg">
+              "Innovation through Data, Intelligence through AI."
+            </span>
+          </div>
         </motion.div>
 
         <motion.div
