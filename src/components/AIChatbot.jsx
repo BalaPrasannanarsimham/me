@@ -31,9 +31,13 @@ const AIChatbot = () => {
       
       const lowerInput = input.toLowerCase();
       if (lowerInput.includes('skills')) {
-        botResponse = "Bala is proficient in Python, Java, SQL, and Machine Learning. He's also experienced with tools like Power BI and AI productivity tools.";
+        botResponse = "Bala is proficient in Python, Java, SQL, R Programming, AWS Cloud Services, Power BI, and Machine Learning!";
+      } else if (lowerInput.includes('certificat') || lowerInput.includes('aws') || lowerInput.includes('credential')) {
+        botResponse = "Bala holds certifications including AWS Academy Cloud Foundations (Training Completion), Google Cloud Generative AI (22 Badges), NPTEL HCI (94% Elite), and Infosys Springboard Power BI & R Programming!";
+      } else if (lowerInput.includes('resume')) {
+        botResponse = "You can download Bala's latest updated resume directly by clicking the 'Download Resume' button in the Hero section above!";
       } else if (lowerInput.includes('project')) {
-        botResponse = "Bala has built several impactful projects like DataLeaf (Carbon Tracker), Food on Wheels, and an Indoor Navigation System.";
+        botResponse = "Bala has built several impactful projects like Aura (Gamified Student Tracking), DataLeaf (Carbon Tracker), Plant Disease ID, Food on Wheels, and Indoor Navigation System.";
       } else if (lowerInput.includes('contact')) {
         botResponse = "You can reach Bala at balaprasannanarasimham.v@gmail.com or find him on LinkedIn!";
       } else if (lowerInput.includes('education')) {

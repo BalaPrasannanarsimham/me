@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Code2, Database, Globe, Wrench, Lightbulb } from 'lucide-react';
+import { Code2, Database, Globe, Wrench, Lightbulb, Cloud, BarChart3 } from 'lucide-react';
 
 const SkillCategory = ({ title, icon: Icon, skills, delay }) => (
   <motion.div
@@ -29,11 +29,12 @@ const SkillCategory = ({ title, icon: Icon, skills, delay }) => (
 
 const Skills = () => {
   const categories = [
-    { title: "Programming", icon: Code2, skills: ["Python", "Java", "C"], delay: 0.1 },
-    { title: "Data & Analytics", icon: Database, skills: ["SQL (Basics)", "Data Analysis"], delay: 0.2 },
-    { title: "Web Technologies", icon: Globe, skills: ["HTML", "CSS"], delay: 0.3 },
-    { title: "Tools", icon: Wrench, skills: ["MS Excel", "MS Word", "MS PowerPoint", "AI Tools"], delay: 0.4 },
-    { title: "Soft Skills", icon: Lightbulb, skills: ["Leadership", "Problem Solving", "Quick Learner"], delay: 0.5 },
+    { title: "Programming Languages", icon: Code2, skills: ["Python", "Java", "C"], delay: 0.1 },
+    { title: "Data & Analytics", icon: Database, skills: ["SQL (Basic)", "R Programming", "Data Modeling", "Statistical Analysis"], delay: 0.2 },
+    { title: "Data Visualization & BI", icon: BarChart3, skills: ["Microsoft Power BI", "Interactive Dashboards", "DAX", "Data Reporting"], delay: 0.3 },
+    { title: "Cloud & Web", icon: Cloud, skills: ["AWS Core Services", "Cloud Security", "Infrastructure Fundamentals", "HTML", "CSS"], delay: 0.4 },
+    { title: "Tools & Automation", icon: Wrench, skills: ["Google APIs", "n8n", "MS Excel", "PowerPoint"], delay: 0.5 },
+    { title: "Core Competencies", icon: Lightbulb, skills: ["Agile Problem Solving", "Technical Leadership", "Rapid Technology Adaptation"], delay: 0.6 },
   ];
 
   return (

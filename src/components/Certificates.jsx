@@ -1,14 +1,27 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Award, ExternalLink, Calendar, Search, ShieldCheck, Trophy, Sparkles, BookOpen } from 'lucide-react';
+import { Award, ExternalLink, Calendar, Search, ShieldCheck, Trophy, Sparkles, BookOpen, Cloud, CheckCircle } from 'lucide-react';
 
 const Certificates = () => {
   const [activeFilter, setActiveFilter] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');
 
-  const filters = ['All', 'AI & Data Science', 'Programming', 'Tools & Design'];
+  const filters = ['All', 'Cloud', 'AI & Data Science', 'Programming', 'Tools & Design'];
 
   const certificates = [
+    {
+      title: "AWS Training Completion: Cloud Foundations",
+      issuer: "AWS Academy (Amazon Web Services)",
+      date: "September 2026",
+      category: "Cloud",
+      icon: Cloud,
+      description: "Completed AWS Academy Graduate - Cloud Foundations training covering Cloud Computing fundamentals, AWS Core Services, Cloud Security, Architecture, and Pricing models.",
+      credentialId: "AWS Academy Graduate",
+      credentialUrl: "/certificates/aws-training-completion.pdf",
+      skills: ["AWS Core Services", "Cloud Computing", "Cloud Security", "Infrastructure Fundamentals", "Cloud Architecture"],
+      color: "from-orange-500/20 to-amber-500/20 text-orange-400 border-orange-500/30",
+      pdf: "/certificates/aws-training-completion.pdf"
+    },
     {
       title: "Generative AI by Google Cloud",
       issuer: "L4G / Google Skills Platform",
@@ -17,15 +30,27 @@ const Certificates = () => {
       icon: Sparkles,
       description: "Completed a 45-hour course on Generative AI by Google Cloud with 22 Skill Badges covering Beginner, Advanced & Generative AI Leader (GAIL) Pathways.",
       credentialId: "Google Skills Profile",
-      credentialUrl: "https://verify.onwingspan.com", // Placeholder verify link
+      credentialUrl: "https://verify.onwingspan.com",
       skills: ["Generative AI", "Google Cloud", "GAIL Pathways", "LLMs", "AI Leadership"],
       color: "from-blue-500/20 to-cyan-500/20 text-cyan-400 border-cyan-500/30"
+    },
+    {
+      title: "Human Computer Interaction",
+      issuer: "SWAYAM NPTEL",
+      date: "2026",
+      category: "Tools & Design",
+      icon: Trophy,
+      description: "Successfully completed NPTEL Certification in Human Computer Interaction with an Elite Top Tier consolidated score of 94%.",
+      credentialId: "NPTEL Score: 94% (Elite)",
+      credentialUrl: "#",
+      skills: ["HCI", "UI/UX Principles", "User Research", "Interaction Design"],
+      color: "from-yellow-500/20 to-amber-500/20 text-amber-400 border-amber-500/30"
     },
     {
       title: "Hands-On Data Visualization with Microsoft Power BI",
       issuer: "Infosys Springboard",
       date: "April 14, 2026",
-      category: "Tools & Design",
+      category: "AI & Data Science",
       icon: Trophy,
       description: "Hands-on implementation of data visualization techniques, dashboards, reports, and data transformation using Microsoft Power BI.",
       credentialId: "Infosys Springboard Verified",
@@ -44,6 +69,18 @@ const Certificates = () => {
       credentialUrl: "https://verify.onwingspan.com",
       skills: ["R Programming", "Statistical Analysis", "Data Frames", "ggplot2"],
       color: "from-indigo-500/20 to-purple-500/20 text-indigo-400 border-indigo-500/30"
+    },
+    {
+      title: "Introduction to Business Intelligence",
+      issuer: "Infosys Springboard",
+      date: "2026",
+      category: "AI & Data Science",
+      icon: Award,
+      description: "Explored core BI architectures, data warehousing principles, OLAP, predictive modeling, and business decision support systems.",
+      credentialId: "Infosys Springboard Verified",
+      credentialUrl: "https://verify.onwingspan.com",
+      skills: ["Business Intelligence", "Data Warehousing", "Analytics", "Decision Systems"],
+      color: "from-teal-500/20 to-emerald-500/20 text-emerald-400 border-emerald-500/30"
     },
     {
       title: "Data Science & Analytics",
